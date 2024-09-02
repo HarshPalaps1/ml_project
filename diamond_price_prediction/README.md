@@ -1,18 +1,18 @@
-# MAchine Learning Projects
+ MAchine Learning Projects
 
-# download poject file
+ 1. download poject file
 
-# create enivornment 
+ 2. create enivornment 
  python3.8 -m venv env
 
- # activate enivornment 
+ 3. activate enivornment 
  env/Scripts/Activate
 
- # install requeired package
+ 4. install requeired package
  pip install -r requirements.txt
 
- # to start app
+ 5. to start app
  python application.py
 
- # go to we browser type
+ 6. go to we browser type
  http://localhost:3000/predict
