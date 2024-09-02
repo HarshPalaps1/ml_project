@@ -1,3 +1,4 @@
+import sys,os
 from sklearn.impute import SimpleImputer ## HAndling Missing Values
 from sklearn.preprocessing import StandardScaler # HAndling Feature Scaling
 from sklearn.preprocessing import OrdinalEncoder # Ordinal Encoding
@@ -5,7 +6,7 @@ from sklearn.preprocessing import OrdinalEncoder # Ordinal Encoding
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
-import sys,os
+
 from dataclasses import dataclass
 import pandas as pd
 import numpy as np
@@ -135,3 +136,10 @@ class DataTransformation:
             logging.info("Exception occured in the initiate_datatransformation")
 
             raise CustomException(e,sys)
+
+
+    
+
+
+
+

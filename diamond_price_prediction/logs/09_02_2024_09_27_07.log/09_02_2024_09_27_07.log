@@ -1,0 +1,3 @@
+[ 2024-09-02 09:27:08,938 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2024-09-02 09:27:08,949 ] 186 werkzeug - INFO -  * Debugger PIN: 967-274-166
+[ 2024-09-02 09:28:47,368 ] 186 werkzeug - INFO -  * Detected change in 'C:\\Users\\pramo\\Downloads\\DiamondPricePrediction2\\application.py', reloading

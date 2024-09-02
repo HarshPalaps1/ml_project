@@ -1,0 +1,17 @@
+[ 2024-09-02 10:50:49,455 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2024-09-02 10:50:49,458 ] 186 werkzeug - INFO -  * Debugger PIN: 976-198-077
+[ 2024-09-02 10:50:55,333 ] 66 root - INFO - Dataframe Gathered
+[ 2024-09-02 10:50:55,883 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:50:55] "POST /predict HTTP/1.1" 200 -
+[ 2024-09-02 10:51:06,254 ] 66 root - INFO - Dataframe Gathered
+[ 2024-09-02 10:51:06,274 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:06] "POST /predict HTTP/1.1" 200 -
+[ 2024-09-02 10:51:07,137 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2024-09-02 10:51:07,519 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:07] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-09-02 10:51:07,534 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:07] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2024-09-02 10:51:07,850 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:07] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-09-02 10:51:08,112 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:08] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-09-02 10:51:16,682 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2024-09-02 10:51:16,693 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:16] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-09-02 10:51:16,996 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:16] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-09-02 10:51:17,309 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:17] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-09-02 10:51:40,744 ] 66 root - INFO - Dataframe Gathered
+[ 2024-09-02 10:51:40,763 ] 186 werkzeug - INFO - 127.0.0.1 - - [02/Sep/2024 10:51:40] "POST /predict HTTP/1.1" 200 -

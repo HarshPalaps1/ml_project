@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 
 ## intialize the data ingestion configuration
-print(os.path.join('artifacts','train.csv'))
+
 @dataclass
 class DataIngestionconfig:
     train_data_path=os.path.join('artifacts','train.csv')
