@@ -1,0 +1,60 @@
+import os 
+import sys
+from src.exception import CustomException
+from src.logger import logging
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+from dataclasses import dataclass
+
+
+from src.components.data_transformation import DataTransformation
+
+# to mention the path to take and put things
+@dataclass #make class with dataclass decorator only in case where you have to only define variables
+class DataIngestionConfig:
+    train_data_path:str=os.path.join("artifacts","train.csv")
+    test_data_path:str=os.path.join("artifacts","test.csv")
+    raw_data_path:str=os.path.join("artifacts","data.csv")
+
+
+class DataIngestion:
+    def __init__(self):
+         # self.integestion_config carry all three path in it
+        self.ingestion_config=DataIngestionConfig()
+    
+    def initiate_data_ingestion(self):
+        logging.info("ENTERED THE DATA INGESTION METHOD OR COMPONENT")
+        try:
+            df=pd.read_csv(os.path.join('notebook\data','students_data.csv'))
+            logging.info("READ THE DATASET AS DATAFRAME")
+
+            os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
+            df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
+
+            logging.info("train test split initiated")
+
+            train_set,test_set=train_test_split(df,test_size=0.2,random_state=42)
+            
+            train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
+            test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
+
+            logging.info("INGESTION OF THE DATA IS COMPLETED")
+
+            return(
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path
+            )
+
+
+        except Exception as e:
+            raise CustomException(e,sys)
+        
+
+if __name__=="__main__":
+    obj=DataIngestion()
+    train_data,test_data=obj.initiate_data_ingestion()
+
+    data_trainformation=DataTransformation()
+    data_trainformation.initiate_data_transformation(train_data,test_data)
